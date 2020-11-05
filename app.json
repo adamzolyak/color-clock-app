@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "color-clock-app",
+    "name": "Color Clock App",
     "slug": "color-clock-app",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -27,6 +27,7 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "description": ""
   }
 }

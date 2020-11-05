@@ -31,17 +31,17 @@ export default function App() {
   const getBackgroundColor = () => {
     let colors = ['rgb(255,255,255)']
 
-    let hour = dayjs().hour()
-
-    console.log('break1')
+    //let hour = dayjs().hour()
+    let hour = 10
 
     if (hour < 6) {
+      colors = ['midnightblue', 'midnightblue']
     } else if ([6, 7, 8].includes(hour)) {
       colors = ['midnightblue', 'orange']
     } else if ([9, 10, 11].includes(hour)) {
-      colors = ['dodgerblue', 'lightskyblue']
+      colors = ['lightskyblue', 'orange']
     } else if (hour >= 12 && hour < 17) {
-      colors = ['dodgerblue', 'dodgerblue']
+      colors = ['dodgerblue', 'lightskyblue']
     } else if (hour >= 17 && hour < 21) {
       colors = ['midnightblue', 'dodgerblue']
     } else if (hour >= 21) {
