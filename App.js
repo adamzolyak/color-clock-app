@@ -34,23 +34,23 @@ export default function App() {
     let hour = dayjs().hour()
 
     if (hour < 6) {
-      colors = ['midnightblue', 'midnightblue']
+      colors = ['#330C70', '#48208A']
     } else if ([6, 7].includes(hour)) {
-      colors = ['midnightblue', 'orange']
+      colors = ['#330C70', '#FFAE00']
     } else if ([8, 9, 10].includes(hour)) {
-      colors = ['orange', 'orange']
+      colors = ['#FFAE00', '#FFC854']
     } else if ([11, 12].includes(hour)) {
-      colors = ['orange', 'dodgerblue']
+      colors = ['#FFAE00', '#1E90FF']
     } else if ([13, 14, 15].includes(hour)) {
-      colors = ['dodgerblue', 'dodgerblue']
+      colors = ['#1E90FF', '#81C0FF']
     } else if ([16, 17].includes(hour)) {
-      colors = ['dodgerblue', 'violet']
+      colors = ['#1E90FF', '#F055EB']
     } else if ([18, 19, 20].includes(hour)) {
-      colors = ['violet', 'violet']
+      colors = ['#F055EB', '#F279EE']
     } else if ([21, 22].includes(hour)) {
-      colors = ['midnightblue', 'violet']
+      colors = ['#330C70', '#F055EB']
     } else if (hour > 22) {
-      colors = ['midnightblue', 'midnightblue']
+      colors = ['#330C70', '#48208A']
     }
 
     setBackgroundColors(colors)
